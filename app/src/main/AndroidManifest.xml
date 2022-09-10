@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.task.a3sctask">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,6 +16,9 @@
         android:theme="@style/Theme.3SCTask"
         tools:targetApi="31">
         <activity
+            android:name=".pokemonDetail.PokemonDetailActivity"
+            android:exported="false" />
+        <activity
             android:name="com.task.a3sctask.SplashActivity"
             android:exported="true">
             <intent-filter>
@@ -22,6 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".home.HomeActivity" />
     </application>
 
 </manifest>
