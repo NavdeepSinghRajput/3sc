@@ -7,10 +7,10 @@
     tools:context=".home.HomeActivity">
 
     <EditText
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="@dimen/small_10dp"
+        android:layout_marginTop="@dimen/small_10dp"
         android:id="@+id/search_bar"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/small_0dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,8 +18,8 @@
 
     <ImageView
         android:id="@+id/searchIcon"
-        android:layout_width="50dp"
-        android:paddingVertical="10dp"
+        android:layout_width="@dimen/size_50"
+        android:paddingVertical="@dimen/small_10dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         android:src="@drawable/ic_baseline_search_24"
@@ -29,10 +29,10 @@
 
     <TextView
         android:visibility="gone"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="@dimen/small_10dp"
+        android:layout_marginTop="@dimen/small_10dp"
         android:id="@+id/searchTitle"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/small_0dp"
         android:text="search result for: "
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,10 +41,10 @@
 
     <TextView
         android:visibility="gone"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="@dimen/small_10dp"
+        android:layout_marginTop="@dimen/small_10dp"
         android:id="@+id/clearSearch"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/small_0dp"
         android:text="CLEAR"
         android:textColor="@color/red"
         android:textStyle="bold"
@@ -53,10 +53,10 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/small_10dp"
         android:id="@+id/pokemonRV"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="@dimen/small_0dp"
+        android:layout_height="@dimen/small_0dp"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/progressBarPagination"

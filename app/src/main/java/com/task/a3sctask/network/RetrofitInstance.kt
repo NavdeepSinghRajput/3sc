@@ -9,6 +9,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.lang.reflect.Modifier
 import java.util.concurrent.TimeUnit
 
+/**
+ * @author Navdeep Singh
+ * @since 08.09.2021
+ */
 class RetrofitInstance {
 
     companion object {

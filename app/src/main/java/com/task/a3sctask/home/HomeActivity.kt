@@ -21,6 +21,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 
+/**
+ * @author Navdeep Singh
+ * @since 09.09.2021
+ */
 
 class HomeActivity : BaseActivity() {
 

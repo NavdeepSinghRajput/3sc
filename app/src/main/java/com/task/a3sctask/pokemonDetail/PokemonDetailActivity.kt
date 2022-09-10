@@ -20,6 +20,10 @@ import com.task.a3sctask.home.viewModel.PokemonDetailActivityViewModel
 import com.task.a3sctask.pokemonDetail.adapter.PokemonStatsAdapter
 import kotlin.properties.Delegates
 
+/**
+ * @author Navdeep Singh
+ * @since 09.09.2021
+ */
 class PokemonDetailActivity : BaseActivity() {
 
     private lateinit var pokemonId: String
@@ -47,6 +51,7 @@ class PokemonDetailActivity : BaseActivity() {
         initViewModel()
     }
 
+    //fetching value from intent
     private fun gettingValueIntent() {
         if (intent.hasExtra(POKEMON_ID)) {
             pokemonId = intent.getStringExtra(POKEMON_ID).toString()
@@ -58,6 +63,7 @@ class PokemonDetailActivity : BaseActivity() {
         }
     }
 
+    //fetching id
     private fun inIt() {
         detailsLayout = findViewById<ConstraintLayout>(R.id.detailsLayout)
         mainCard = findViewById<ConstraintLayout>(R.id.mainCard)
@@ -82,6 +88,7 @@ class PokemonDetailActivity : BaseActivity() {
         }
     }
 
+    // setting viewmodel
     private fun initViewModel() {
         val viewModel = ViewModelProvider(this)[PokemonDetailActivityViewModel::class.java]
         viewModel.getPokemonListObserver().observe(this, Observer<PokemonDetailModel> {

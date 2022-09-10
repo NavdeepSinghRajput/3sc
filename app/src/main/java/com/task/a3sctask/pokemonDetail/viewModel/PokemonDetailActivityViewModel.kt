@@ -17,6 +17,7 @@ class PokemonDetailActivityViewModel: ViewModel() {
         return pokemonModelLiveData
     }
 
+    // calling api for getting data
     fun gettingPokemonDetailData(id:String){
         GlobalScope.launch(Dispatchers.IO) {
         val retrofitInstance = RetrofitInstance.getClient()?.create(IRestApi::class.java)

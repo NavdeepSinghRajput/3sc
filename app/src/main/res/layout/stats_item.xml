@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    app:layout_constraintCircleRadius="20dp">
+    android:layout_margin="@dimen/small_5dp"
+    app:layout_constraintCircleRadius="@dimen/radius_20">
 
 
     <TextView
@@ -13,11 +13,10 @@
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_transparent"
         android:gravity="left"
-        android:paddingHorizontal="10dp"
-        android:paddingVertical="5dp"
-        android:text="Height"
+        android:paddingHorizontal="@dimen/small_10dp"
+        android:paddingVertical="@dimen/small_5dp"
         android:textColor="@color/grey"
-        android:textSize="16dp"
+        android:textSize="@dimen/text_16dp"
         android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,19 +27,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_transparent"
-        android:paddingHorizontal="10dp"
-        android:paddingVertical="5dp"
-        android:text="Height"
+        android:paddingHorizontal="@dimen/small_10dp"
+        android:paddingVertical="@dimen/small_5dp"
         android:textColor="@color/dark_grey"
-        android:textSize="16dp"
+        android:textSize="@dimen/text_16dp"
         app:layout_constraintStart_toEndOf="@+id/statsTitle"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <ProgressBar
         android:id="@+id/statsProgress"
-        android:layout_width="0dp"
-        android:layout_height="5dp"
+        android:layout_width="@dimen/small_0dp"
+        android:layout_height="@dimen/small_5dp"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/statsCount"
