@@ -13,9 +13,9 @@ class RetrofitInstance {
 
     companion object {
 
+        // creating retrofit instance
         fun getClient(): Retrofit? {
             return Retrofit.Builder().baseUrl(BuildConfig.BASE_URL)
-//            return Retrofit.Builder().baseUrl("https://pokeapi.co/api/v2/")
                 .client(getOkHttpClient())
                 .addConverterFactory(
                     GsonConverterFactory
@@ -31,6 +31,7 @@ class RetrofitInstance {
                 .build()
         }
 
+        // http log showing
         private fun getOkHttpClient(): OkHttpClient? {
             val interceptor = HttpLoggingInterceptor()
             if (BuildConfig.DEBUG) {

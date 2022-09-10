@@ -9,12 +9,14 @@ import retrofit2.http.Query
 
 interface IRestApi {
 
+    // getting list of pokemon
     @GET("pokemon/")
     suspend fun gettingPokemonList(
-        @Query("offset") offset: String?,
+        @Query("offset") offset: Int?,
         @Query("limit") limit: String?,
     ): PokemonModel
 
+    // getting pokemon detail
     @GET("pokemon/{id}")
     suspend fun gettingPokemonDetail(
         @Path("id") id: String?

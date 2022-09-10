@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
+    android:layout_margin="5dp"
     android:elevation="20dp"
-    android:id="@+id/pokemonCard"
+    app:cardBackgroundColor="#fc6d6d"
     app:cardCornerRadius="20dp"
     app:layout_constraintCircleRadius="20dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pokemonCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp">
@@ -18,22 +19,37 @@
             android:id="@+id/pokemonTitleName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
             android:text="Ben"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20dp"
-            app:layout_constraintEnd_toStartOf="@+id/arrowAhead"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
-            android:id="@+id/arrowAhead"
-            android:layout_width="wrap_content"
+        <TextView
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:background="@drawable/rounded_transparent"
+            android:id="@+id/viewDetails"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Detail"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pokemonTitleName" />
+
+        <ImageView
+            android:id="@+id/arrowAhead"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pokemonTitleName" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

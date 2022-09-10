@@ -1,6 +1,7 @@
 package com.task.a3sctask
 
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
@@ -41,6 +42,10 @@ abstract class BaseActivity : AppCompatActivity() {
         if (compositeDisposable != null) {
             compositeDisposable!!.clear()
         }
+    }
+
+    fun showToast(message: String){
+        Toast.makeText(baseContext,message,Toast.LENGTH_SHORT).show()
     }
 
     protected val isStarted: Boolean

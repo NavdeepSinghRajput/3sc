@@ -20,8 +20,8 @@ class PokemonDetailActivityViewModel: ViewModel() {
     fun gettingPokemonDetailData(id:String){
         GlobalScope.launch(Dispatchers.IO) {
         val retrofitInstance = RetrofitInstance.getClient()?.create(IRestApi::class.java)
-           val pokemonList =  retrofitInstance?.gettingPokemonDetail(id)
-            pokemonModelLiveData.postValue(pokemonList)
+           val pokemonDetail =  retrofitInstance?.gettingPokemonDetail(id)
+            pokemonModelLiveData.postValue(pokemonDetail)
         }
     }
 }
