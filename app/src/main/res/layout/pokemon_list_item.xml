@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/small_5dp"
+    android:elevation="@dimen/radius_20"
+    app:cardBackgroundColor="#fc6d6d"
+    app:cardCornerRadius="@dimen/radius_20"
+    app:layout_constraintCircleRadius="@dimen/radius_20">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pokemonCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_10dp">
+
+        <TextView
+            android:id="@+id/pokemonTitleName"
+            android:layout_width="@dimen/small_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_10dp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="@dimen/radius_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:background="@drawable/rounded_transparent"
+            android:id="@+id/viewDetails"
+            android:layout_width="@dimen/small_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_10dp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pokemonTitleName" />
+
+        <ImageView
+            android:id="@+id/arrowAhead"
+            android:layout_width="@dimen/Image_Size"
+            android:layout_height="@dimen/Image_Size"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pokemonTitleName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_5dp">5dp</dimen>
+    <dimen name="small_10dp">10dp</dimen>
+    <dimen name="small_0dp">0dp</dimen>
+    <dimen name="text_16dp">16sp</dimen>
+    <dimen name="radius_20">20dp</dimen>
+    <dimen name="Image_Size">100dp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_26">26sp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="image_card">100dp</dimen>
+    <dimen name="size_50">50dp</dimen>
+</resources>
